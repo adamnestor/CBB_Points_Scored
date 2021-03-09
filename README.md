@@ -18,7 +18,7 @@
 
 https://public.tableau.com/shared/7KNGBC339?:display_count=y&:origin=viz_share_link
 
-### Insights
+### Key Insights
 1. Increasing Points Scored is driven foremost by *Made 2-Pt FGs*. Taking high percentage *2-Pt FG Attempts* would increase Chicago State's *Points Scored*, compared to lower percentage *3-Pt FG Attempts*
 ![CBB_Insight_1](https://user-images.githubusercontent.com/79426455/110554337-97b6e780-8108-11eb-952c-6e992a18923b.JPG)
 
