@@ -7,16 +7,32 @@
   * **Therefore, this analysis aims to identify which _Game Variables_ have an effect on _Points Scored_, which ultimately may lead to more wins.**
 
 ### Tools and Resources Used  
-  **Dataset** https://www.kaggle.com/andrewsundberg/college-basketball-dataset  
+  **Dataset** https://www.kaggle.com/andrewsundberg/college-basketball-dataset *Note: This Kaggle Dataset has since been updated with new files and data*  
   **Analytics Tool** Excel; including Data Analysis Toolpak.  
   **Analytic Methodologies** Descriptive and Inferential Statistics, Linear Regression, Multiple Linear Regression  
   **Data Visualization** Tableau  
-  
+
 ### YouTube Project Walk-Through
 
 ### Tableau Presentation
-
 https://public.tableau.com/shared/7KNGBC339?:display_count=y&:origin=viz_share_link
+
+### Data Cleaning
+  * Dataset originally had 90968 rows of data.
+  * Initial investigation found Win/Loss record for each team of record.
+  * Chicago State having the worst record; narrowed down to Chicago State games which focused in on 255 rows of data.
+  * Created a season column in order to sort games by basketball season instead of calendar year.
+  * Created columns for Defensive Rebounds, Unassisted FG, and 2-Pt shots made and attempted by using existing columns. 
+  * Limited columns to game variables within Chicago States control (eliminated opponents game variables).
+
+### EDA
+  * I looked at the distributions of the data and the mean/median for the various numerical variables. 
+  * I created a correlation heatmap to identify potential relationships in the data.
+
+### Model Building
+  * First, I identified key variables from EDA that could be tested to predict scoring more points.
+  * I performed Linear Regression between *Points Scored* and each key variable.
+  * **Multiple Linear Regression** - I used the key variables to predict how many points would be scored based on particular key variables.
 
 ### Key Insights
 1. Increasing Points Scored is driven foremost by *Made 2-Pt FGs*. Taking high percentage *2-Pt FG Attempts* would increase Chicago State's *Points Scored*, compared to lower percentage *3-Pt FG Attempts*
